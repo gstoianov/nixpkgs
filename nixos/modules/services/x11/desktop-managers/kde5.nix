@@ -207,7 +207,7 @@ in
 
     # Extra UDEV rules used by Solid
     services.udev.packages = [
-      pkgs.libmtp
+      # pkgs.libmtp
       pkgs.media-player-info
     ];
 
