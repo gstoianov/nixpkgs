@@ -146,6 +146,14 @@ rec {
         url = "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git"
             + "/patch/drivers/lguest/x86/core.c?id=cdd77e87eae52";
         sha256 = "04xlx6al10cw039av6jkby7gx64zayj8m1k9iza40sw0fydcfqhc";
+      };
     };
-  };
+  surface_pro_4_typing_cover =
+    { name = "typing-cover";
+      patch = ./0001-HID-microsoft-Add-Surface-4-type-cover-pro-4-JP.patch;
+    };
+  surface_pro_4_typing_cover_k46 =
+    { name = "typing-cover";
+      patch = ./001_typing-cover-k46.patch;
+    };
 }
