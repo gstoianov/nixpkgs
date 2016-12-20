@@ -11515,6 +11515,8 @@ with pkgs;
 
   intel-ocl = callPackage ../os-specific/linux/intel-ocl { };
 
+  intel-ipts-firmware = callPackage ../os-specific/linux/firmware/intel-ipts-firmware { };
+
   iomelt = callPackage ../os-specific/linux/iomelt { };
 
   iotop = callPackage ../os-specific/linux/iotop { };
