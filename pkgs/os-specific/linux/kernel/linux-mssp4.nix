@@ -1,14 +1,14 @@
 { stdenv, fetchgit, perl, buildLinux, ... } @ args:
 
 import ./generic.nix (args // rec {
-  version = "4.9-rc8";
-  modDirVersion = "4.9.0-rc8";
+  version = "4.9";
+  modDirVersion = "4.9.0";
   extraMeta.branch = "4.9";
 
   src = fetchgit {
     url = "https://gitlab.com/jimdigriz/linux.git";
-    rev = "8c15950";
-    sha256 = "1jdizw25n4vmfipks7fwqiv1if20qkvxhzjmpqlfy1p111wgcm34";
+    rev = "8181ead45d71172fa9b31f5593e91eb3cc632cbe";
+    sha256 = "0q2l95mcligpdwx424qcndxrzg0rp980amqadm95vn55p797qzj1";
   };
 
   extraConfig =
